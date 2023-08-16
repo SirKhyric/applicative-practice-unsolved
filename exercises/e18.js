@@ -11,7 +11,7 @@ export function getGreatestDiscoveryYear(data) {
   let maxYear = 0;
   let maxCount = 0;
 
-  const asteroidDiscoveriesByYear = data.asteroids.reduce((acc, asteroid) => {
+  data.asteroids.reduce((acc, asteroid) => {
     const discoveryYear = asteroid.discoveryYear;
 
     if (acc[discoveryYear] > maxCount) {
